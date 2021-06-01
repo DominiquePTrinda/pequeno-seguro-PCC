@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: 0;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #f7f7f7;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    -o-object-fit: cover;
+    -o-object-position: center;
+}
+
+.flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-space-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    user-select: none;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 4px solid #cecece;
+}
+
+nav {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navegacao {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.cell {
+    display: none;
+}
+
+.menu,
+.menu-cell {
+    display: none;
+    font-size: 1.5rem;
+    color: #777777;
+}
+
+.menu span {
+    margin-right: 3px;
+}
+
+.navegacao-conteudo {
+    display: contents;
+}
+
+.navegacao-a,
+.navegacao-b,
+.navegacao-c {
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.navegacao-a a p,
+.navegacao-b a p,
+.navegacao-c a p {
+    color: #777777;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navegacao-a a p span,
+.navegacao-b a p span,
+.navegacao-c a p span {
+    font-size: 1.2rem;
+    margin-right: 3px;
+}
+
+.check-nav {
+    position: relative;
+    color: #518bf7 !important;
+}
+
+.check-nav::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: 4px solid #518bf7;
+    width: 100%;
+    height: calc(100% - 7px);
+}
+
+.navegacao-b h3 {
+    color: #518bf7;
+}
+
+.navegacao-c form {
+    position: relative;
+    width: 60%;
+    height: 37px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #cecece;
+}
+
+.navegacao-c form input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    padding-right: 40px;
+    border: 0;
+    font-size: 1rem;
+    background-color: #f7f7f7;
+}
+
+.navegacao-c form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    border: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #777777;
+    cursor: pointer;
+}
+
+.navegacao-c a {
+    height: 100%;
+    width: 50px;
+}
+
+.navegacao-c a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.foto-perfil-nome {
+    display: none;
+}
+
+.navegacao-c a p span {
+    font-size: 1.5rem;
+}
+
+.configuracoes,
+.notificacoes {
+    position: relative;
+}
+
+.configuracoes-conteudo {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    width: 150px;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 #cecece;
+    padding: 5px;
+}
+
+.notificacoes-conteudo,
+.mensagem-conteudo {
+    display: none;
+    position: absolute;
+    top: 35px;
+    width: 300px;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 0 #cecece;
+    padding: 5px;
+}
+
+.mensagem-conteudo {
+    top: 55px;
+}
+
+.notificacoes-conteudo::-webkit-scrollbar,
+.mensagem-conteudo::-webkit-scrollbar {
+    width: 5px;
+}
+
+.notificacoes-conteudo::-webkit-scrollbar-track,
+.mensagem-conteudo::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.notificacoes-conteudo::-webkit-scrollbar-thumb,
+.mensagem-conteudo::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.notificacoes-conteudo::-webkit-scrollbar-thumb:hover,
+.mensagem-conteudo::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.notificacoes-parte,
+.mensagem-parte {
+    width: 100%;
+    height: 80px;
+    margin: 5px auto;
+    cursor: pointer;
+    background-color: #cecece3a;
+    border-radius: 2.5px;
+}
+
+.notificacoes-parte img,
+.mensagem-parte img {
+    width: 80px;
+    height: 80px;
+    border-radius: 2.5px;
+    padding: 8px;
+    margin: 0;
+}
+
+.notificacoes-texto,
+.mensagem-texto {
+    display: inline-block;
+    width: calc(100% - 90px);
+    height: 100%;
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+.notificacoes-texto span {
+    letter-spacing: 1.1px;
+}
+
+.mensagem-texto p {
+    height: 43.5px;
+    overflow: hidden;
+}
+
+.mensagem-texto p span {
+    font-size: 0.8rem !important;
+    font-weight: 300;
+}
+
+.notificacoes-texto .ntf-texto-yesornot {
+    font-size: 0.67rem;
+}
+
+.notificacoes-texto .ntf-button button {
+    font-size: 0.8rem;
+    border: 0;
+    background-color: #518bf7;
+    color: #ffffff;
+    padding: 2.5px 4px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+
+.notificacoes-texto .ntf-button button:nth-of-type(2) {
+    margin-left: 2.5px;
+    background-color: #fb3640;
+}
+
+.XconfC {
+    display: block !important;
+}
+
+.configuracoes-conteudo a p {
+    width: 100%;
+    padding: 5px;
+}
+
+.configuracoes-conteudo a p:hover {
+    background-color: #cecece77;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .menu,
+    .cell,
+    .menu-cell {
+        display: block;
+    }
+
+    .menu-cell {
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 10px
+    }
+    .navegacao-conteudo {
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        width: 250px;
+        height: 100%;
+        background-color: #f3f3f3;
+        box-shadow: 0 0 2px 0 #cecece;
+        transition: transform .7s;
+    }
+
+    .MmenuCell {
+        transform: translateX(0%) !important;
+    }
+
+    .navegacao-conteudo .navegacao-a,
+    .navegacao-conteudo .navegacao-c {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .navegacao-conteudo .navegacao-a {
+        order: 2;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .navegacao-a a p,
+    .navegacao-b a p,
+    .navegacao-c a p {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .navegacao-a a p span,
+    .navegacao-b a p span,
+    .navegacao-c a p span {
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+
+    .navegacao-c {
+        order: 1;
+    }
+
+    .navegacao-conteudo .navegacao-c form {
+        order: 3;
+        width: 100%;
+        margin: 0 5px;
+
+    }
+
+    .navegacao-conteudo .navegacao-c .foto-perfil {
+        order: 1;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    .foto-perfil-nome {
+        display: inline-flex;
+        padding-left: 5px;
+        font-size: 1.1rem !important;
+    }
+
+    .navegacao-conteudo .navegacao-c .configuracoes {
+        display: none;
+    }
+
+    .check-nav {
+        color: #777777 !important;
+    }
+
+    .check-nav::after {
+        border-bottom: 0;
+    }
+
+    .navegacao-b {
+        display: none;
+    }
+
+    .mensagem,
+    .notificacoes {
+        position: static;
+        z-index: 1000;
+    }
+
+    .XconfC {
+        height: 100%;
+    }
+    .XconfCZindex {
+        z-index: 1002;
+    }
+
+    .notificacoes-conteudo,
+    .mensagem-conteudo {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .notificacoes-texto .notificacao-commets {
+        font-size: 0.8rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .notificacoes-texto .ntf-texto-yesornot {
+        font-size: 0.52rem;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mensagem-texto p {
+        font-size: 0.8rem !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 40px;
+    }
+
+}

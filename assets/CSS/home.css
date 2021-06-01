@@ -1,0 +1,528 @@
+body{
+    background-color: #e9e9e9;
+    height: auto;
+}
+/* width */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin-top: 55px;
+}
+
+.container-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.conteudo-center {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    margin: 10px 0;
+}
+.postar{
+    background-color: #58e0f825;
+    background-color: #f1f1f1;
+
+    width: 100%;
+    border-radius: 2.5px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+.imagempostar{
+    display: none;
+    width: 100px!important;
+    height: 100px!important;
+    border-radius: 2.5px!important;
+    margin: 0!important;
+    margin-bottom: 10px!important;
+}
+.imagempostar-m{
+    display: block!important;
+}
+.postar-corpo{
+    display: inline-flex;
+    width: 95%;
+}
+.postar img{
+    user-select: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.postar .postar-conteudo{
+    width: calc(100% - 70px);
+}
+.postar .postar-conteudo textarea{
+    resize: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 95%;
+    height: 100px;
+    border: 2px solid #518bf78c;
+    outline: 0;
+    border-radius: 10.5px;
+}
+.postar-conteudo-btn {
+    width: 160px;
+    user-select: none;
+}
+.postar-img{
+    color: #747474;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.fa-grin{
+    font-size: 1.8rem;
+}
+.postar-conteudo-btn button{
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: #518bf7;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2.5px;
+}
+
+.postagens{
+    position: relative;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2.5px;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.delete-pub{
+    user-select: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.delete-pub button{
+    border: 0;
+    background-color: #518bf7;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 2.5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.corpo-delete-pub{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 0 2px 0 #cecece;
+}
+.corpo-delete-pub-m{
+    display: block;
+}
+.corpo-delete-pub a{
+    color: #555;
+    padding: 5px;
+}
+.postagem-corpo{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.postagem-conteudo{
+    width: 100%;
+    min-height: 60px;
+    align-items: flex-start;
+}
+.fotoPerfil-postagem{
+    user-select: none;
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.top-NomeTexto{
+    user-select: none;
+    width: calc(100% - 85px);
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: top;
+    line-height: 20px;
+    text-indent: 5px;
+    margin-top: 5px;
+}
+
+.top-NomeTexto span{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #242424;
+}
+.postagem-cell{
+    display: block;
+    width: 100%;
+}
+.postagem-cell p{
+    color: #747474;
+    line-height: 20px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.titulo-postagem{
+    padding: 10px 5px;
+    font-size: 1.2rem!important;
+}
+.horas-postagem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 30px;
+}
+
+.postagem-foto{
+    width: 100%;
+    height: auto;
+}
+.postagem-foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5px;
+    max-height: 600px;
+}
+.postagem-reacoes{
+    user-select: none;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cecece;
+    border-radius: 20px;
+}
+.postagem-reacoes button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.postagem-reacoes button label{
+    cursor: pointer;
+}
+.postagem-reacoes button:hover{
+    background-color: #74747444;
+    color: #f7f7f7;
+}
+.postagem-reacoes .buttonCheck{
+    background-color: #74747444; 
+}
+.postagem-reacoes button i{
+    margin-right: 2.5px;
+    font-size: 1.3rem;
+}
+.postagem-comentariosRecentes{
+    width: 100%;
+    height: auto;
+    max-height: 85px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.postagem-comentariosRecentes p{
+    color: #242424;
+    text-align: left;
+}
+.postagem-addComentarios{
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #cecece;
+    border-radius: 2.5px;
+}
+.postagem-addComentarios textarea{
+    resize: none;
+    width: calc(100% - 80px);
+    height: 100%;
+    border: 0; 
+    padding: 9px;
+}
+.postagem-addComentarios button{
+    width: 80px;
+    height: 100%;
+    border: 0; 
+    color: #518bf7;
+    font-weight: 600;
+    background-color: transparent;
+    cursor: pointer;
+}
+.conteudo-left,
+.conteudo-right {
+    position: sticky;
+    top: 0;
+    width: 280px;
+    height: calc(100vh - 80px);
+    margin: 10px;
+    border-radius: 2.5px;
+}
+
+.perfil-conteudo, .indicacoes-conteudo{
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+    background-color: #ffffff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.indicacoes-conteudo{
+    padding: 10px;
+    user-select: none;
+}
+.perfil-capa{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.perfil-capa img{
+    width: 100%;
+    height: 100%;
+}
+.perfil-foto{
+    user-select: none;
+    position: absolute;
+    top: calc(100px - 25px);
+    justify-content: flex-start;
+    width: 100%;
+    height: 75px;
+}
+.perfil-foto img{
+    width:  70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin-left: 10px;
+}
+.perfil-foto span{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    color: #474747;
+    width: calc(100% - 80px);
+    height: 30px;
+    overflow: hidden;
+}
+.perfil-informacoes{
+    user-select: none;
+    width: 100%;
+    height: 70px;
+    margin-top: 50px;
+}
+.perfil-informacoes-a,
+.perfil-informacoes-b,
+.perfil-informacoes-c{
+    width: calc(100% / 3);
+    text-align: center;
+}
+.perfil-informacoes-a span,
+.perfil-informacoes-b span,
+.perfil-informacoes-c span{
+    font-size: 0.9rem;
+}
+.perfil-informacoes-a p,
+.perfil-informacoes-b p,
+.perfil-informacoes-c p{
+    font-size: 1.2rem;
+    color: #518bf7;
+}
+.indicacoes-conteudo h4{
+    color: #242424;
+}
+.indicacoes-conteudo-parte{
+    margin: 10px 0;
+}
+.indicacoes-conteudo-parte button{
+    width: 100%;
+    font-size: 1.2rem;
+    color: #518bf7;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.indicacoes-conteudo-parte p{
+    font-size: 0.8rem;
+    color: #afafaf;
+}
+.sugestoes-seguidores{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px; 
+}
+.sugestoes-seguidores h4{
+    color: #242424;
+}
+.sugestoes-conteudo{
+    justify-content: flex-start;
+    user-select: none;
+    margin: 10px auto;
+}
+.sugestoes-img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.sugestoes-img img{
+    width:  45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.sugestao-Nonebtn {
+    padding-left: 5px;
+}
+.sugestao-Nonebtn span{
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 65%;
+    white-space : nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 22px;
+}
+.sugestao-Nonebtn button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.2rem;
+    color: #518bf7;
+    cursor: pointer;
+}
+.sugestao-Nonebtn p{
+    font-size: 0.8rem;
+    color: #888;
+    line-height: 20px;
+}
+@media screen and (max-width: 1060px){
+    .sugestao-Nonebtn p{
+        display: none;
+    } 
+    .sugestao-Nonebtn button{
+        font-size: 1rem;
+    } 
+}
+.amigos-ativo {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    border-radius: 2.5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.amigos-ativo::-webkit-scrollbar {
+    width: 5px;
+}
+
+.amigos-ativo::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.amigos-ativo::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.amigos-ativo::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.amigos-ativo h4{
+    color: #242424;
+}
+.amigos-conteudo{
+    justify-content: flex-start;
+    user-select: none;
+}
+.amigos-img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.amigos-img img{
+    width:  45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.amigos-img p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #01ad1e;
+    font-size: 5rem;
+}
+.amigos-conteudo span{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: 5px;
+    color: #474747;
+}
+@media screen and (max-width: 950px){
+    .conteudo-right{
+        display: none;
+    }
+}
+.postagens-cell{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .conteudo-left{
+        display: none;
+    }
+    .postagens-cell{
+        display: block;
+    }
+    .conteudo-center{
+       padding: 0 5px;
+    }
+    .sugestoes-conteudo{
+        justify-content: flex-start;
+    }
+}
+.btnseguir{
+    display: contents;
+}
